@@ -1,0 +1,77 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    font-family: 'Helvetica';
+}
+
+div#app {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image: url('../images/woods-background.jpeg');
+    background-size: cover;
+    overflow-y: scroll;
+}
+
+div#app img#splash-logo,
+div#btns-container {
+    width: 75%;
+    max-width: 750px;
+}
+
+div#btns-container a div.btn {
+    background-color: #fff;
+    padding: 10px 0px;
+    color: #4A5247;
+    font-weight: bold;
+    font-size: 1em;
+    margin: 15px auto;
+    width: 350px;
+    cursor: pointer;
+}
+
+div#btns-container a {
+  text-decoration: none;
+}
+
+div#btns-container a div.btn:hover {
+    opacity: 0.75;
+}
+
+div#btns-container {
+    text-align: center;
+    margin: 0px auto;
+}
+
+span#footer {
+    font-weight: 100;
+    color: #fff;
+    font-size: 0.75em;
+}
+
+span#footer a {
+    color: #fff;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    div#app img#splash-logo {
+        width: 95%;
+        max-width: 95%;
+    }
+    div#btns-container {
+        margin: 75px auto;
+    }
+    div#btns-container div.btn {
+        font-size: 2.5em;
+        width: 750px;
+        padding: 25px 0px;
+        margin: 25px auto;
+    }
+    span#footer {
+        font-size: 1em;
+        padding-bottom: 25px;
+    }
+}
